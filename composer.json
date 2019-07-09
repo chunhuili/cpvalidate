@@ -9,8 +9,6 @@
             "email": "2947680759@qq.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable" : true,
     "require": {},
     "autoload": {
         "psr-4": {
@@ -21,5 +19,7 @@
         "psr-4": {
             "Chunhuili\\Cpvalidate\\Tests\\": "tests/"
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true
 }
