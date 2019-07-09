@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Traits;
+namespace Chunhuili\Cpvalidate\Traits;
 
 trait TranslationsTrait
 {

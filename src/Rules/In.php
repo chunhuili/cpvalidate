@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Helper;
+use Chunhuili\Cpvalidate\Rule;
 
 class In extends Rule
 {
@@ -52,7 +52,7 @@ class In extends Rule
 
         $allowedValues = $this->parameter('allowed_values');
 
-        $or = $this->validation ? $this->validation->getTranslation('or') : 'or';
+        $or = $this->Cpvalidate ? $this->Cpvalidate->getTranslation('or') : 'or';
         $allowedValuesText = Helper::join(Helper::wraps($allowedValues, "'"), ', ', ", {$or} ");
         $this->setParameterText('allowed_values', $allowedValuesText);
 

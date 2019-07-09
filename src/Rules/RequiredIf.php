@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class RequiredIf extends Required
 {
@@ -39,7 +39,7 @@ class RequiredIf extends Required
         $definedValues = $this->parameter('values');
         $anotherValue = $this->getAttribute()->getValue($anotherAttribute);
 
-        $validator = $this->validation->getValidator();
+        $validator = $this->Cpvalidate->getValidator();
         $requiredValidator = $validator('required');
 
         if (in_array($anotherValue, $definedValues)) {

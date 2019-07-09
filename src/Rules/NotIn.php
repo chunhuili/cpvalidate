@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Helper;
+use Chunhuili\Cpvalidate\Rule;
 
 class NotIn extends Rule
 {
@@ -52,7 +52,7 @@ class NotIn extends Rule
 
         $disallowedValues = (array) $this->parameter('disallowed_values');
 
-        $and = $this->validation ? $this->validation->getTranslation('and') : 'and';
+        $and = $this->Cpvalidate ? $this->Cpvalidate->getTranslation('and') : 'and';
         $disallowedValuesText = Helper::join(Helper::wraps($disallowedValues, "'"), ', ', ", {$and} ");
         $this->setParameterText('disallowed_values', $disallowedValuesText);
 

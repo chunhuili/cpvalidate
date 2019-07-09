@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules\Traits;
+namespace Chunhuili\Cpvalidate\Rules\Traits;
 
 use InvalidArgumentException;
-use Rakit\Validation\Helper;
+use Chunhuili\Cpvalidate\Helper;
 
 trait FileTrait
 {

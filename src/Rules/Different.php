@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class Different extends Rule
 {
@@ -24,7 +24,7 @@ class Different extends Rule
         $this->requireParameters($this->fillableParams);
 
         $field = $this->parameter('field');
-        $anotherValue = $this->validation->getValue($field);
+        $anotherValue = $this->Cpvalidate->getValue($field);
 
         return $value != $anotherValue;
     }

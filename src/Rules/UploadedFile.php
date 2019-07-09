@@ -1,11 +1,11 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\MimeTypeGuesser;
-use Rakit\Validation\Rule;
-use Rakit\Validation\Rules\Interfaces\BeforeValidate;
+use Chunhuili\Cpvalidate\Helper;
+use Chunhuili\Cpvalidate\MimeTypeGuesser;
+use Chunhuili\Cpvalidate\Rule;
+use Chunhuili\Cpvalidate\Rules\Interfaces\BeforeValidate;
 
 class UploadedFile extends Rule implements BeforeValidate
 {
@@ -109,7 +109,7 @@ class UploadedFile extends Rule implements BeforeValidate
 
         $keys = explode(".", $attribute->getKey());
         $firstKey = array_shift($keys);
-        $firstKeyValue = $this->validation->getValue($firstKey);
+        $firstKeyValue = $this->Cpvalidate->getValue($firstKey);
 
         $resolvedValue = $this->resolveUploadedFileValue($firstKeyValue);
 
@@ -118,7 +118,7 @@ class UploadedFile extends Rule implements BeforeValidate
             return;
         }
 
-        $this->validation->setValue($firstKey, $resolvedValue);
+        $this->Cpvalidate->setValue($firstKey, $resolvedValue);
     }
 
     /**
@@ -134,7 +134,7 @@ class UploadedFile extends Rule implements BeforeValidate
         $allowedTypes = $this->parameter('allowed_types');
 
         if ($allowedTypes) {
-            $or = $this->validation ? $this->validation->getTranslation('or') : 'or';
+            $or = $this->Cpvalidate ? $this->Cpvalidate->getTranslation('or') : 'or';
             $this->setParameterText('allowed_types', Helper::join(Helper::wraps($allowedTypes, "'"), ', ', ", {$or} "));
         }
 

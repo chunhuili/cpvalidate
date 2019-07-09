@@ -1,10 +1,10 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\MimeTypeGuesser;
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Helper;
+use Chunhuili\Cpvalidate\MimeTypeGuesser;
+use Chunhuili\Cpvalidate\Rule;
 
 class Mimes extends Rule
 {
@@ -62,7 +62,7 @@ class Mimes extends Rule
         $allowedTypes = $this->parameter('allowed_types');
 
         if ($allowedTypes) {
-            $or = $this->validation ? $this->validation->getTranslation('or') : 'or';
+            $or = $this->Cpvalidate ? $this->Cpvalidate->getTranslation('or') : 'or';
             $this->setParameterText('allowed_types', Helper::join(Helper::wraps($allowedTypes, "'"), ', ', ", {$or} "));
         }
 

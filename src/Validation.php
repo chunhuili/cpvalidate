@@ -1,13 +1,13 @@
 <?php
 
-namespace Rakit\Validation;
+namespace Chunhuili\Cpvalidate;
 
 use Closure;
-use Rakit\Validation\Rules\Interfaces\BeforeValidate;
-use Rakit\Validation\Rules\Interfaces\ModifyValue;
-use Rakit\Validation\Rules\Required;
+use Chunhuili\Cpvalidate\Rules\Interfaces\BeforeValidate;
+use Chunhuili\Cpvalidate\Rules\Interfaces\ModifyValue;
+use Chunhuili\Cpvalidate\Rules\Required;
 
-class Validation
+class Cpvalidate
 {
     use Traits\TranslationsTrait, Traits\MessagesTrait;
 
@@ -35,7 +35,7 @@ class Validation
     /**
      * Constructor
      *
-     * @param Rakit\Validation\Validator $validator
+     * @param Chunhuili\Cpvalidate\Validator $validator
      * @param array $inputs
      * @param array $rules
      * @param array $messages
@@ -74,7 +74,7 @@ class Validation
      * Get attribute by key
      *
      * @param string $attributeKey
-     * @return null|Rakit\Validation\Attribute
+     * @return null|Chunhuili\Cpvalidate\Attribute
      */
     public function getAttribute(string $attributeKey)
     {
@@ -82,7 +82,7 @@ class Validation
     }
 
     /**
-     * Run validation
+     * Run Cpvalidate
      *
      * @param array $inputs
      * @return void
@@ -92,7 +92,7 @@ class Validation
         $this->errors = new ErrorBag; // reset error bag
         $this->inputs = array_merge($this->inputs, $this->resolveInputAttributes($inputs));
 
-        // Before validation hooks
+        // Before Cpvalidate hooks
         foreach ($this->attributes as $attributeKey => $attribute) {
             foreach ($attribute->getRules() as $rule) {
                 if ($rule instanceof BeforeValidate) {
@@ -109,7 +109,7 @@ class Validation
     /**
      * Get ErrorBag instance
      *
-     * @return Rakit\Validation\ErrorBag
+     * @return Chunhuili\Cpvalidate\ErrorBag
      */
     public function errors(): ErrorBag
     {
@@ -119,7 +119,7 @@ class Validation
     /**
      * Validate attribute
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @return void
      */
     protected function validateAttribute(Attribute $attribute)
@@ -172,7 +172,7 @@ class Validation
     /**
      * Check whether given $attribute is array attribute
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @return bool
      */
     protected function isArrayAttribute(Attribute $attribute): bool
@@ -184,7 +184,7 @@ class Validation
     /**
      * Parse array attribute into it's child attributes
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @return array
      */
     protected function parseArrayAttribute(Attribute $attribute): array
@@ -222,7 +222,7 @@ class Validation
 
     /**
      * Gather a copy of the attribute data filled with any missing attributes.
-     * Adapted from: https://github.com/illuminate/validation/blob/v5.3.23/Validator.php#L334
+     * Adapted from: https://github.com/illuminate/Cpvalidate/blob/v5.3.23/Validator.php#L334
      *
      * @param  string  $attribute
      * @return array
@@ -244,7 +244,7 @@ class Validation
 
     /**
      * Get all of the exact attribute values for a given wildcard attribute.
-     * Adapted from: https://github.com/illuminate/validation/blob/v5.3.23/Validator.php#L354
+     * Adapted from: https://github.com/illuminate/Cpvalidate/blob/v5.3.23/Validator.php#L354
      *
      * @param  array  $data
      * @param  string  $attributeKey
@@ -275,7 +275,7 @@ class Validation
 
     /**
      * Get the explicit part of the attribute name.
-     * Adapted from: https://github.com/illuminate/validation/blob/v5.3.23/Validator.php#L2817
+     * Adapted from: https://github.com/illuminate/Cpvalidate/blob/v5.3.23/Validator.php#L2817
      *
      * E.g. 'foo.bar.*.baz' -> 'foo.bar'
      *
@@ -291,7 +291,7 @@ class Validation
 
     /**
      * Extract data based on the given dot-notated path.
-     * Adapted from: https://github.com/illuminate/validation/blob/v5.3.23/Validator.php#L2830
+     * Adapted from: https://github.com/illuminate/Cpvalidate/blob/v5.3.23/Validator.php#L2830
      *
      * Used to extract a sub-section of the data for faster iteration.
      *
@@ -314,9 +314,9 @@ class Validation
     /**
      * Add error to the $this->errors
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @param mixed $value
-     * @param Rakit\Validation\Rule $ruleValidator
+     * @param Chunhuili\Cpvalidate\Rule $ruleValidator
      * @return void
      */
     protected function addError(Attribute $attribute, $value, Rule $ruleValidator)
@@ -342,8 +342,8 @@ class Validation
     /**
      * Check the rule is optional
      *
-     * @param Rakit\Validation\Attribute $attribute
-     * @param Rakit\Validation\Rule $rule
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Rule $rule
      * @return bool
      */
     protected function ruleIsOptional(Attribute $attribute, Rule $rule): bool
@@ -356,7 +356,7 @@ class Validation
     /**
      * Resolve attribute name
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @return string
      */
     protected function resolveAttributeName(Attribute $attribute): string
@@ -376,9 +376,9 @@ class Validation
     /**
      * Resolve message
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @param mixed $value
-     * @param Rakit\Validation\Rule $validator
+     * @param Chunhuili\Cpvalidate\Rule $validator
      * @return mixed
      */
     protected function resolveMessage(Attribute $attribute, $value, Rule $validator): string
@@ -555,7 +555,7 @@ class Validation
     }
 
     /**
-     * Check validations are passed
+     * Check Cpvalidates are passed
      *
      * @return bool
      */
@@ -565,7 +565,7 @@ class Validation
     }
 
     /**
-     * Check validations are failed
+     * Check Cpvalidates are failed
      *
      * @return bool
      */
@@ -611,7 +611,7 @@ class Validation
     /**
      * Get Validator class instance
      *
-     * @return Rakit\Validation\Validator
+     * @return Chunhuili\Cpvalidate\Validator
      */
     public function getValidator(): Validator
     {
@@ -654,7 +654,7 @@ class Validation
     /**
      * Set valid data
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @param mixed $value
      * @return void
      */
@@ -682,7 +682,7 @@ class Validation
     /**
      * Set invalid data
      *
-     * @param Rakit\Validation\Attribute $attribute
+     * @param Chunhuili\Cpvalidate\Attribute $attribute
      * @param mixed $value
      * @return void
      */

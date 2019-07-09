@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
-use Rakit\Validation\Rules\Interfaces\ModifyValue;
+use Chunhuili\Cpvalidate\Rule;
+use Chunhuili\Cpvalidate\Rules\Interfaces\ModifyValue;
 
 class Defaults extends Rule implements ModifyValue
 {

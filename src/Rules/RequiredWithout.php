@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class RequiredWithout extends Required
 {
@@ -34,11 +34,11 @@ class RequiredWithout extends Required
     {
         $this->requireParameters(['fields']);
         $fields = $this->parameter('fields');
-        $validator = $this->validation->getValidator();
+        $validator = $this->Cpvalidate->getValidator();
         $requiredValidator = $validator('required');
 
         foreach ($fields as $field) {
-            if (!$this->validation->hasValue($field)) {
+            if (!$this->Cpvalidate->hasValue($field)) {
                 $this->setAttributeAsRequired();
                 return $requiredValidator->check($value, []);
             }

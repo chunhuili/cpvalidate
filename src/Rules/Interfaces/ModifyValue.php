@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Rules\Interfaces;
+namespace Chunhuili\Cpvalidate\Rules\Interfaces;
 
 interface ModifyValue
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class Present extends Rule
 {
@@ -20,6 +20,6 @@ class Present extends Rule
      */
     public function check($value): bool
     {
-        return $this->validation->hasValue($this->attribute->getKey());
+        return $this->Cpvalidate->hasValue($this->attribute->getKey());
     }
 }

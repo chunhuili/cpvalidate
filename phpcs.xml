@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="Rakit validation coding standard">
-    <description>Rakit validation coding standard</description>
+<ruleset name="Chunhuili Cpvalidate coding standard">
+    <description>Chunhuili Cpvalidate coding standard</description>
 
     <!-- display progress -->
     <arg value="p"/>

@@ -1,8 +1,8 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class AlphaSpaces extends Rule
 {

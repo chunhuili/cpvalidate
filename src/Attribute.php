@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation;
+namespace Chunhuili\Cpvalidate;
 
 class Attribute
 {
@@ -14,13 +14,13 @@ class Attribute
     /** @var string|null */
     protected $alias;
 
-    /** @var Rakit\Validation\Validation */
-    protected $validation;
+    /** @var Chunhuili\Cpvalidate\Cpvalidate */
+    protected $Cpvalidate;
 
     /** @var bool */
     protected $required = false;
 
-    /** @var Rakit\Validation\Validation|null */
+    /** @var Chunhuili\Cpvalidate\Cpvalidate|null */
     protected $primaryAttribute = null;
 
     /** @var array */
@@ -32,19 +32,19 @@ class Attribute
     /**
      * Constructor
      *
-     * @param Rakit\Validation\Validation  $validation
+     * @param Chunhuili\Cpvalidate\Cpvalidate  $Cpvalidate
      * @param string      $key
      * @param string|null $alias
      * @param array       $rules
      * @return void
      */
     public function __construct(
-        Validation $validation,
+        Cpvalidate $Cpvalidate,
         string $key,
         $alias = null,
         array $rules = []
     ) {
-        $this->validation = $validation;
+        $this->Cpvalidate = $Cpvalidate;
         $this->alias = $alias;
         $this->key = $key;
         foreach ($rules as $rule) {
@@ -55,7 +55,7 @@ class Attribute
     /**
      * Set the primary attribute
      *
-     * @param Rakit\Validation\Attribute $primaryAttribute
+     * @param Chunhuili\Cpvalidate\Attribute $primaryAttribute
      * @return void
      */
     public function setPrimaryAttribute(Attribute $primaryAttribute)
@@ -77,7 +77,7 @@ class Attribute
     /**
      * Get primary attributes
      *
-     * @return Rakit\Validation\Attribute|null
+     * @return Chunhuili\Cpvalidate\Attribute|null
      */
     public function getPrimaryAttribute()
     {
@@ -101,7 +101,7 @@ class Attribute
     /**
      * Add other attributes
      *
-     * @param Rakit\Validation\Attribute $otherAttribute
+     * @param Chunhuili\Cpvalidate\Attribute $otherAttribute
      * @return void
      */
     public function addOtherAttribute(Attribute $otherAttribute)
@@ -122,13 +122,13 @@ class Attribute
     /**
      * Add rule
      *
-     * @param Rakit\Validation\Rule $rule
+     * @param Chunhuili\Cpvalidate\Rule $rule
      * @return void
      */
     public function addRule(Rule $rule)
     {
         $rule->setAttribute($this);
-        $rule->setValidation($this->validation);
+        $rule->setCpvalidate($this->Cpvalidate);
         $this->rules[$rule->getKey()] = $rule;
     }
 
@@ -221,7 +221,7 @@ class Attribute
             $key = $this->getKey();
         }
 
-        return $this->validation->getValue($key);
+        return $this->Cpvalidate->getValue($key);
     }
 
     /**
@@ -272,7 +272,7 @@ class Attribute
         $primaryAttribute = $this->getPrimaryAttribute();
         $key = str_replace('_', ' ', $this->key);
 
-        // Resolve key from array validation
+        // Resolve key from array Cpvalidate
         if ($primaryAttribute) {
             $split = explode('.', $key);
             $key = implode(' ', array_map(function ($word) {

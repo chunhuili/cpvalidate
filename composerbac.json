@@ -1,6 +1,6 @@
 {
-  "name": "rakit/validation",
-  "description": "PHP Laravel like standalone validation library",
+  "name": "Chunhuili/Cpvalidate",
+  "description": "PHP Laravel like standalone Cpvalidate library",
   "license": "MIT",
   "authors": [
     {
@@ -10,12 +10,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Rakit\\Validation\\": "src"
+      "Chunhuili\\Cpvalidate\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Rakit\\Validation\\Tests\\": ["tests", "tests/Fixtures"]
+      "Chunhuili\\Cpvalidate\\Tests\\": ["tests", "tests/Fixtures"]
     }
   },
   "require": {

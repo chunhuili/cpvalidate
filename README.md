@@ -1,19 +1,19 @@
-Rakit Validation - PHP Standalone Validation Library
+Chunhuili Cpvalidate - PHP Standalone Cpvalidate Library
 ======================================================
 
-[![Build Status](https://img.shields.io/travis/rakit/validation.svg?style=flat-square)](https://travis-ci.org/rakit/validation)
+[![Build Status](https://img.shields.io/travis/Chunhuili/Cpvalidate.svg?style=flat-square)](https://travis-ci.org/Chunhuili/Cpvalidate)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://doge.mit-license.org)
 
 
-PHP Standalone library for validating data. Inspired by `Illuminate\Validation` Laravel.
+PHP Standalone library for validating data. Inspired by `Illuminate\Cpvalidate` Laravel.
 
 ## Features
 
-* API like Laravel validation.
-* Array validation.
-* `$_FILES` validation with multiple file support.
+* API like Laravel Cpvalidate.
+* Array Cpvalidate.
+* `$_FILES` Cpvalidate with multiple file support.
 * Custom attribute aliases.
-* Custom validation messages.
+* Custom Cpvalidate messages.
 * Custom rule.
 
 ## Requirements
@@ -26,12 +26,12 @@ PHP Standalone library for validating data. Inspired by `Illuminate\Validation` 
 #### Installation
 
 ```
-composer require "rakit/validation"
+composer require "Chunhuili/Cpvalidate"
 ```
 
 #### Usage
 
-There are two ways to validating data with this library. Using `make` to make validation object, 
+There are two ways to validating data with this library. Using `make` to make Cpvalidate object, 
 then validate it using `validate`. Or just use `validate`. 
 Examples:
 
@@ -42,12 +42,12 @@ Using `make`:
 
 require('vendor/autoload.php');
 
-use Rakit\Validation\Validator;
+use Chunhuili\Cpvalidate\Validator;
 
 $validator = new Validator;
 
 // make it
-$validation = $validator->make($_POST + $_FILES, [
+$Cpvalidate = $validator->make($_POST + $_FILES, [
     'name'                  => 'required',
     'email'                 => 'required|email',
     'password'              => 'required|min:6',
@@ -59,17 +59,17 @@ $validation = $validator->make($_POST + $_FILES, [
 ]);
 
 // then validate
-$validation->validate();
+$Cpvalidate->validate();
 
-if ($validation->fails()) {
+if ($Cpvalidate->fails()) {
     // handling errors
-    $errors = $validation->errors();
+    $errors = $Cpvalidate->errors();
     echo "<pre>";
     print_r($errors->firstOfAll());
     echo "</pre>";
     exit;
 } else {
-    // validation passes
+    // Cpvalidate passes
     echo "Success!";
 }
 
@@ -82,11 +82,11 @@ or just `validate` it:
 
 require('vendor/autoload.php');
 
-use Rakit\Validation\Validator;
+use Chunhuili\Cpvalidate\Validator;
 
 $validator = new Validator;
 
-$validation = $validator->validate($_POST + $_FILES, [
+$Cpvalidate = $validator->validate($_POST + $_FILES, [
     'name'                  => 'required',
     'email'                 => 'required|email',
     'password'              => 'required|min:6',
@@ -97,15 +97,15 @@ $validation = $validator->validate($_POST + $_FILES, [
     'skills.*.percentage'   => 'required|numeric'
 ]);
 
-if ($validation->fails()) {
+if ($Cpvalidate->fails()) {
 	// handling errors
-	$errors = $validation->errors();
+	$errors = $Cpvalidate->errors();
 	echo "<pre>";
 	print_r($errors->firstOfAll());
 	echo "</pre>";
 	exit;
 } else {
-	// validation passes
+	// Cpvalidate passes
 	echo "Success!";
 }
 
@@ -113,7 +113,7 @@ if ($validation->fails()) {
 
 In this case, 2 examples above will output the same results. 
 
-But with `make` you can setup something like custom invalid message, custom attribute alias, etc before validation running.
+But with `make` you can setup something like custom invalid message, custom attribute alias, etc before Cpvalidate running.
 
 ### Attribute Alias
 
@@ -126,7 +126,7 @@ Example:
 $validator = new Validator;
 
 // To set attribute alias, you should use `make` instead `validate`.
-$validation->make([
+$Cpvalidate->make([
 	'province_id' => $_POST['province_id'],
 	'district_id' => $_POST['district_id']
 ], [
@@ -135,23 +135,23 @@ $validation->make([
 ]);
 
 // now you can set aliases using this way:
-$validation->setAlias('province_id', 'Province');
-$validation->setAlias('district_id', 'District');
+$Cpvalidate->setAlias('province_id', 'Province');
+$Cpvalidate->setAlias('district_id', 'District');
 
 // or this way:
-$validation->setAliases([
+$Cpvalidate->setAliases([
 	'province_id' => 'Province',
 	'district_id' => 'District'
 ]);
 
 // then validate it
-$validation->validate();
+$Cpvalidate->validate();
 
 ```
 
 Now if `province_id` value is empty, error message would be 'Province is required'.
 
-## Custom Validation Message
+## Custom Cpvalidate Message
 
 Before register/set custom messages, here are some variables you can use in your custom messages:
 
@@ -164,7 +164,7 @@ Here are some ways to register/set your custom message(s):
 
 #### Custom Messages for Validator
 
-With this way, anytime you make validation using `make` or `validate` it will set your custom messages for it.
+With this way, anytime you make Cpvalidate using `make` or `validate` it will set your custom messages for it.
 It is useful for localization.
 
 To do this, you can set custom messages as first argument constructor like this:
@@ -176,9 +176,9 @@ $validator = new Validator([
 	// etc
 ]);
 
-// then validation belows will use those custom messages
-$validation_a = $validator->validate($dataset_a, $rules_for_a);
-$validation_b = $validator->validate($dataset_b, $rules_for_b);
+// then Cpvalidate belows will use those custom messages
+$Cpvalidate_a = $validator->validate($dataset_a, $rules_for_a);
+$Cpvalidate_b = $validator->validate($dataset_b, $rules_for_b);
 
 ```
 
@@ -192,21 +192,21 @@ $validator->setMessages([
 	// etc
 ]);
 
-// now validation belows will use those custom messages
-$validation_a = $validator->validate($dataset_a, $rules_for_dataset_a);
-$validation_b = $validator->validate($dataset_b, $rules_for_dataset_b);
+// now Cpvalidate belows will use those custom messages
+$Cpvalidate_a = $validator->validate($dataset_a, $rules_for_dataset_a);
+$Cpvalidate_b = $validator->validate($dataset_b, $rules_for_dataset_b);
 
 ```
 
-#### Custom Messages for Validation
+#### Custom Messages for Cpvalidate
 
-Sometimes you may want to set custom messages for specific validation.
+Sometimes you may want to set custom messages for specific Cpvalidate.
 To do this you can set your custom messages as 3rd argument of `$validator->make` or `$validator->validate` like this:
 
 ```php
 $validator = new Validator;
 
-$validation_a = $validator->validate($dataset_a, $rules_for_dataset_a, [
+$Cpvalidate_a = $validator->validate($dataset_a, $rules_for_dataset_a, [
 	'required' => ':attribute harus diisi',
 	'email' => ':email tidak valid',
 	// etc
@@ -214,13 +214,13 @@ $validation_a = $validator->validate($dataset_a, $rules_for_dataset_a, [
 
 ```
 
-Or you can use `$validation->setMessages` like this:
+Or you can use `$Cpvalidate->setMessages` like this:
 
 ```php
 $validator = new Validator;
 
-$validation_a = $validator->make($dataset_a, $rules_for_dataset_a);
-$validation_a->setMessages([
+$Cpvalidate_a = $validator->make($dataset_a, $rules_for_dataset_a);
+$Cpvalidate_a->setMessages([
 	'required' => ':attribute harus diisi',
 	'email' => ':email tidak valid',
 	// etc
@@ -228,7 +228,7 @@ $validation_a->setMessages([
 
 ...
 
-$validation_a->validate();
+$Cpvalidate_a->validate();
 ```
 
 #### Custom Message for Specific Attribute Rule
@@ -241,15 +241,15 @@ Examples:
 ```php
 $validator = new Validator;
 
-$validation_a = $validator->make($dataset_a, [
+$Cpvalidate_a = $validator->make($dataset_a, [
 	'age' => 'required|min:18'
 ]);
 
-$validation_a->setMessages([
+$Cpvalidate_a->setMessages([
 	'age:min' => '18+ only',
 ]);
 
-$validation_a->validate();
+$Cpvalidate_a->validate();
 ```
 
 Or using chaining methods:
@@ -257,14 +257,14 @@ Or using chaining methods:
 ```php
 $validator = new Validator;
 
-$validation_a = $validator->make($dataset_a, [
+$Cpvalidate_a = $validator->make($dataset_a, [
 	'photo' => [
 		'required',
 		$validator('uploaded_file')->fileTypes('jpeg|png')->message('Photo must be jpeg/png image')
 	]
 ]);
 
-$validation_a->validate();
+$Cpvalidate_a->validate();
 ```
 
 ## Translation
@@ -290,23 +290,23 @@ $validator->setTranslations([
 $validator->setMessage('in', ":attribute hanya memperbolehkan :allowed_values");
 
 // Validate
-$validation = $validator->validate($inputs, [
+$Cpvalidate = $validator->validate($inputs, [
     'nomor' => 'in:1,2,3'
 ]);
 
-$message = $validation->errors()->first('nomor'); // "Nomor hanya memperbolehkan '1', '2', atau '3'" 
+$message = $Cpvalidate->errors()->first('nomor'); // "Nomor hanya memperbolehkan '1', '2', atau '3'" 
 ```
 
 > Actually, our built-in rules only use words 'and' and 'or' that you may need to translates.
 
 ## Working with Error Message
 
-Errors messages are collected in `Rakit\Validation\ErrorBag` object that you can get it using `errors()` method.
+Errors messages are collected in `Chunhuili\Cpvalidate\ErrorBag` object that you can get it using `errors()` method.
 
 ```php
-$validation = $validator->validate($inputs, $rules);
+$Cpvalidate = $validator->validate($inputs, $rules);
 
-$errors = $validation->errors(); // << ErrorBag
+$errors = $Cpvalidate->errors(); // << ErrorBag
 ```
 
 Now you can use methods below to retrieves errors messages:
@@ -353,7 +353,7 @@ $messages = $errors->firstOfAll('<li>:message</li>');
 // ]
 ```
 
-Argument `$dotNotation` is for array validation. 
+Argument `$dotNotation` is for array Cpvalidate. 
 If it is `false` it will return original array structure, if it `true` it will return flatten array with dot notation keys.
 
 For example:
@@ -418,10 +418,10 @@ Check if given key has an error. It returns `bool` if a key has an error, and ot
 
 ## Getting Validated, Valid, and Invalid Data
 
-For example you have validation like this:
+For example you have Cpvalidate like this:
 
 ```php
-$validation = $validator->validate([
+$Cpvalidate = $validator->validate([
     'title' => 'Lorem Ipsum',
     'body' => 'Lorem ipsum dolor sit amet ...',
     'published' => null,
@@ -437,7 +437,7 @@ $validation = $validator->validate([
 You can get validated data, valid data, or invalid data using methods in example below:
 
 ```php
-$validatedData = $validation->getValidatedData();
+$validatedData = $Cpvalidate->getValidatedData();
 // [
 //     'title' => 'Lorem Ipsum',
 //     'body' => 'Lorem ipsum dolor sit amet ...',
@@ -445,14 +445,14 @@ $validatedData = $validation->getValidatedData();
 //     'something' => '-invalid-'
 // ]
 
-$validData = $validation->getValidData();
+$validData = $Cpvalidate->getValidData();
 // [
 //     'title' => 'Lorem Ipsum',
 //     'body' => 'Lorem ipsum dolor sit amet ...',
 //     'published' => '1'
 // ]
 
-$invalidData = $validation->getInvalidData();
+$invalidData = $Cpvalidate->getInvalidData();
 // [
 //     'something' => '-invalid-'
 // ]
@@ -464,7 +464,7 @@ $invalidData = $validation->getInvalidData();
 
 <details><summary><strong>required</strong></summary>
 
-The field under this validation must be present and not 'empty'.
+The field under this Cpvalidate must be present and not 'empty'.
 
 Here are some examples:
 
@@ -493,31 +493,31 @@ For example `required_if:something,1,yes,on` will be required if `something` val
 
 <details><summary><strong>required_unless</strong>:another_field,value_1,value_2,...</summary>
 
-The field under validation must be present and not empty unless the anotherfield field is equal to any value.
+The field under Cpvalidate must be present and not empty unless the anotherfield field is equal to any value.
 
 </details>
 
 <details><summary><strong>required_with</strong>:field_1,field_2,...</summary>
 
-The field under validation must be present and not empty only if any of the other specified fields are present.
+The field under Cpvalidate must be present and not empty only if any of the other specified fields are present.
 
 </details>
 
 <details><summary><strong>required_without</strong>:field_1,field_2,...</summary>
 
-The field under validation must be present and not empty only when any of the other specified fields are not present.
+The field under Cpvalidate must be present and not empty only when any of the other specified fields are not present.
 
 </details>
 
 <details><summary><strong>required_with_all</strong>:field_1,field_2,...</summary>
 
-The field under validation must be present and not empty only if all of the other specified fields are present.
+The field under Cpvalidate must be present and not empty only if all of the other specified fields are present.
 
 </details>
 
 <details><summary><strong>required_without_all</strong>:field_1,field_2,...</summary>
 
-The field under validation must be present and not empty only when all of the other specified fields are not present.
+The field under Cpvalidate must be present and not empty only when all of the other specified fields are not present.
 
 </details>
 
@@ -538,7 +538,7 @@ Here are some example definitions and explanations:
 * `uploaded_file:0,1M`: uploaded file size must be between 0 - 1 MB, but uploaded file is optional.
 * `required|uploaded_file:0,1M,png,jpeg`: uploaded file size must be between 0 - 1MB and mime types must be `image/jpeg` or `image/png`.
 
-Optionally, if you want to have separate error message between size and type validation.
+Optionally, if you want to have separate error message between size and type Cpvalidate.
 You can use `mimes` rule to validate file types, and `min`, `max`, or `between` to validate it's size.
 
 For multiple file upload, PHP will give you undesirable array `$_FILES` structure ([here](http://php.net/manual/en/features.file-upload.multiple.php#53240) is the topic). So we make `uploaded_file` rule to automatically resolve your `$_FILES` value to be well-organized array structure. That means, you cannot only use `min`, `max`, `between`, or `mimes` rules to validate multiple file upload. You should put `uploaded_file` just to resolve it's value and make sure that value is correct uploaded file value.
@@ -554,13 +554,13 @@ For example if you have input files like this:
 You can  simply validate it like this:
 
 ```php
-$validation = $validator->validate($_FILES, [
+$Cpvalidate = $validator->validate($_FILES, [
     'photos.*' => 'uploaded_file:0,2M,jpeg,png'
 ]);
 
 // or
 
-$validation = $validator->validate($_FILES, [
+$Cpvalidate = $validator->validate($_FILES, [
     'photos.*' => 'uploaded_file|max:2M|mimes:jpeg,png'
 ]);
 ```
@@ -575,13 +575,13 @@ Or if you have input files like this:
 You can validate it like this:
 
 ```php
-$validation = $validator->validate($_FILES, [
+$Cpvalidate = $validator->validate($_FILES, [
     'images.*' => 'uploaded_file|max:2M|mimes:jpeg,png',
 ]);
 
 // or
 
-$validation = $validator->validate($_FILES, [
+$Cpvalidate = $validator->validate($_FILES, [
     'images.profile' => 'uploaded_file|max:2M|mimes:jpeg,png',
     'images.cover' => 'uploaded_file|max:5M|mimes:jpeg,png',
 ]);
@@ -593,7 +593,7 @@ Now when you use `getValidData()` or `getInvalidData()` you will get well array 
 
 <details><summary><strong>mimes</strong>:extension_a,extension_b,...</summary>
 
-The `$_FILES` item under validation must have a MIME type corresponding to one of the listed extensions.
+The `$_FILES` item under Cpvalidate must have a MIME type corresponding to one of the listed extensions.
 
 </details>
 
@@ -602,44 +602,44 @@ The `$_FILES` item under validation must have a MIME type corresponding to one o
 This is special rule that doesn't validate anything. 
 It just set default value to your attribute if that attribute is empty or not present.
 
-For example if you have validation like this
+For example if you have Cpvalidate like this
 
 ```php
-$validation = $validator->validate([
+$Cpvalidate = $validator->validate([
     'enabled' => null
 ], [
     'enabled' => 'default:1|required|in:0,1'
     'published' => 'default:0|required|in:0,1'
 ]);
 
-$validation->passes(); // true
+$Cpvalidate->passes(); // true
 ```
 
-Validation passes because we sets default value for `enabled` and `published` to `1` and `0` which is valid.
+Cpvalidate passes because we sets default value for `enabled` and `published` to `1` and `0` which is valid.
 
 </details>
 
 <details><summary><strong>email</strong></summary>
 
-The field under this validation must be valid email address.
+The field under this Cpvalidate must be valid email address.
 
 </details>
 
 <details><summary><strong>uppercase</strong></summary>
 
-The field under this validation must be valid uppercase.
+The field under this Cpvalidate must be valid uppercase.
 
 </details>
 
 <details><summary><strong>lowercase</strong></summary>
 
-The field under this validation must be valid lowercase.
+The field under this Cpvalidate must be valid lowercase.
 
 </details>
 
 <details><summary><strong>json</strong></summary>
 
-The field under this validation must be valid JSON string.
+The field under this Cpvalidate must be valid JSON string.
 
 </details>
 
@@ -683,7 +683,7 @@ So it doesn't check data type.
 If you want enable strict checking, you can invoke validator like this:
 
 ```php
-$validation = $validator->validate($data, [
+$Cpvalidate = $validator->validate($data, [
     'enabled' => [
         'required', 
         $validator('in', [true, 1])->strict()
@@ -713,7 +713,7 @@ You can also validate uploaded file using this rule to validate minimum size of 
 For example:
 
 ```php
-$validation = $validator->validate([
+$Cpvalidate = $validator->validate([
     'photo' => $_FILES['photo']
 ], [
     'photo' => 'required|min:1M'
@@ -731,7 +731,7 @@ You can also validate uploaded file using this rule to validate maximum size of 
 For example:
 
 ```php
-$validation = $validator->validate([
+$Cpvalidate = $validator->validate([
     'photo' => $_FILES['photo']
 ], [
     'photo' => 'required|max:2M'
@@ -749,7 +749,7 @@ You can also validate uploaded file using this rule to validate size of uploaded
 For example:
 
 ```php
-$validation = $validator->validate([
+$Cpvalidate = $validator->validate([
     'photo' => $_FILES['photo']
 ], [
     'photo' => 'required|between:1M,2M'
@@ -760,13 +760,13 @@ $validation = $validator->validate([
 
 <details><summary><strong>digits</strong>:value</summary>
 
-The field under validation must be numeric and must have an exact length of `value`.
+The field under Cpvalidate must be numeric and must have an exact length of `value`.
 
 </details>
 
 <details><summary><strong>digits_between</strong>:min,max</summary>
 
-The field under validation must have a length between the given `min` and `max`.
+The field under Cpvalidate must have a length between the given `min` and `max`.
 
 </details>
 
@@ -779,7 +779,7 @@ But you can specify URL schemes if you want.
 For example:
 
 ```php
-$validation = $validator->validate($inputs, [
+$Cpvalidate = $validator->validate($inputs, [
     'random_url' => 'url',          // value can be `any_scheme://...`
     'https_url' => 'url:http',      // value must be started with `https://`
     'http_url' => 'url:http,https', // value must be started with `http://` or `https://`
@@ -886,14 +886,14 @@ This also works the same way as the [after rule](#after). Pass anything that can
 
 <details><summary><strong>callback</strong></summary>
 
-You can use this rule to define your own validation rule.
+You can use this rule to define your own Cpvalidate rule.
 This rule can't be registered using string pipe.
 To use this rule, you should put Closure inside array of rules.
 
 For example:
 
 ```php
-$validation = $validator->validate($_POST, [
+$Cpvalidate = $validator->validate($_POST, [
     'even_number' => [
         'required',
         function ($value) {
@@ -908,7 +908,7 @@ You can set invalid message by returning a string.
 For example, example above would be:
 
 ```php
-$validation = $validator->validate($_POST, [
+$Cpvalidate = $validator->validate($_POST, [
     'even_number' => [
         'required',
         function ($value) {
@@ -924,7 +924,7 @@ $validation = $validator->validate($_POST, [
 ]);
 ```
 
-> Note: `Rakit\Validation\Rules\Callback` instance is binded into your Closure. 
+> Note: `Chunhuili\Cpvalidate\Rules\Callback` instance is binded into your Closure. 
   So you can access rule properties and methods using `$this`.
 
 </details>
@@ -932,7 +932,7 @@ $validation = $validator->validate($_POST, [
 
 ## Register/Override Rule
 
-Another way to use custom validation rule is to create a class extending `Rakit\Validation\Rule`. 
+Another way to use custom Cpvalidate rule is to create a class extending `Chunhuili\Cpvalidate\Rule`. 
 Then register it using `setValidator` or `addValidator`.
 
 For example, you want to create `unique` validator that check field availability from database. 
@@ -942,7 +942,7 @@ First, lets create `UniqueRule` class:
 ```php
 <?php
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class UniqueRule extends Rule
 {
@@ -987,7 +987,7 @@ class UniqueRule extends Rule
 Then you need to register `UniqueRule` instance into validator like this:
 
 ```php
-use Rakit\Validation\Validator;
+use Chunhuili\Cpvalidate\Validator;
 
 $validator = new Validator;
 
@@ -997,12 +997,12 @@ $validator->addValidator('unique', new UniqueRule($pdo));
 Now you can use it like this:
 
 ```php
-$validation = $validator->validate($_POST, [
+$Cpvalidate = $validator->validate($_POST, [
     'email' => 'email|unique:users,email,exception@mail.com'
 ]);
 ```
 
-In `UniqueRule` above, property `$message` is used for default invalid message. And property `$fillable_params` is used for `fillParameters` method (defined in `Rakit\Validation\Rule` class). By default `fillParameters` will fill parameters listed in `$fillable_params`. For example `unique:users,email,exception@mail.com` in example above, will set:
+In `UniqueRule` above, property `$message` is used for default invalid message. And property `$fillable_params` is used for `fillParameters` method (defined in `Chunhuili\Cpvalidate\Rule` class). By default `fillParameters` will fill parameters listed in `$fillable_params`. For example `unique:users,email,exception@mail.com` in example above, will set:
 
 ```php
 $params['table'] = 'users';
@@ -1016,7 +1016,7 @@ $params['except'] = 'exception@mail.com';
 Note that `unique` rule that we created above also can be used like this:
 
 ```php
-$validation = $validator->validate($_POST, [
+$Cpvalidate = $validator->validate($_POST, [
     'email' => [
     	'required', 'email',
     	$validator('unique', 'users', 'email')->message('Custom message')
@@ -1029,7 +1029,7 @@ So you can improve `UniqueRule` class above by adding some methods that returnin
 ```php
 <?php
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class UniqueRule extends Rule
 {
@@ -1061,7 +1061,7 @@ class UniqueRule extends Rule
 Then you can use it in more funky way like this:
 
 ```php
-$validation = $validator->validate($_POST, [
+$Cpvalidate = $validator->validate($_POST, [
     'email' => [
     	'required', 'email',
     	$validator('unique')->table('users')->column('email')->except('exception@mail.com')->message('Custom message')
@@ -1078,7 +1078,7 @@ To make your custom rule implicit, you can make `$implicit` property value to be
 ```php
 <?php
 
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Rule;
 
 class YourCustomRule extends Rule
 {
@@ -1092,15 +1092,15 @@ class YourCustomRule extends Rule
 
 In some case, you may want your custom rule to be able to modify it's attribute value like our `default/defaults` rule. So in current and next rules checks, your modified value will be used. 
 
-To do this, you should implements `Rakit\Validation\Rules\Interfaces\ModifyValue` and create method `modifyValue($value)` to your custom rule class.
+To do this, you should implements `Chunhuili\Cpvalidate\Rules\Interfaces\ModifyValue` and create method `modifyValue($value)` to your custom rule class.
 
 For example:
 
 ```php
 <?php
 
-use Rakit\Validation\Rule;
-use Rakit\Validation\Rules\Interfaces\ModifyValue;
+use Chunhuili\Cpvalidate\Rule;
+use Chunhuili\Cpvalidate\Rules\Interfaces\ModifyValue;
 
 class YourCustomRule extends Rule implements ModifyValue
 {
@@ -1117,19 +1117,19 @@ class YourCustomRule extends Rule implements ModifyValue
 }
 ```
 
-#### Before Validation Hook
+#### Before Cpvalidate Hook
 
-You may want to do some preparation before validation running. For example our `uploaded_file` rule will resolves attribute value that come from `$_FILES` (undesirable) array structure to be well-organized array structure, so we can validate multiple file upload just like validating other data.
+You may want to do some preparation before Cpvalidate running. For example our `uploaded_file` rule will resolves attribute value that come from `$_FILES` (undesirable) array structure to be well-organized array structure, so we can validate multiple file upload just like validating other data.
 
-To do this, you should implements `Rakit\Validation\Rules\Interfaces\BeforeValidate` and create method `beforeValidate()` to your custom rule class.
+To do this, you should implements `Chunhuili\Cpvalidate\Rules\Interfaces\BeforeValidate` and create method `beforeValidate()` to your custom rule class.
 
 For example:
 
 ```php
 <?php
 
-use Rakit\Validation\Rule;
-use Rakit\Validation\Rules\Interfaces\BeforeValidate;
+use Chunhuili\Cpvalidate\Rule;
+use Chunhuili\Cpvalidate\Rules\Interfaces\BeforeValidate;
 
 class YourCustomRule extends Rule implements BeforeValidate
 {
@@ -1137,12 +1137,12 @@ class YourCustomRule extends Rule implements BeforeValidate
 
     public function beforeValidate()
     {
-        $attribute = $this->getAttribute(); // Rakit\Validation\Attribute instance
-        $validation = $this->validation; // Rakit\Validation\Validation instance
+        $attribute = $this->getAttribute(); // Chunhuili\Cpvalidate\Attribute instance
+        $Cpvalidate = $this->Cpvalidate; // Chunhuili\Cpvalidate\Cpvalidate instance
 
-        // Do something with $attribute and $validation
+        // Do something with $attribute and $Cpvalidate
         // For example change attribute value
-        $validation->setValue($attribute->getKey(), "your custom value");
+        $Cpvalidate->setValue($attribute->getKey(), "your custom value");
     }
 
     ...

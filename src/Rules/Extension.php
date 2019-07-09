@@ -1,9 +1,9 @@
 <?php
 
-namespace Rakit\Validation\Rules;
+namespace Chunhuili\Cpvalidate\Rules;
 
-use Rakit\Validation\Helper;
-use Rakit\Validation\Rule;
+use Chunhuili\Cpvalidate\Helper;
+use Chunhuili\Cpvalidate\Rule;
 
 class Extension extends Rule
 {
@@ -40,7 +40,7 @@ class Extension extends Rule
             $allowedExtensions[$key] = ltrim($ext, '.');
         }
 
-        $or = $this->validation ? $this->validation->getTranslation('or') : 'or';
+        $or = $this->Cpvalidate ? $this->Cpvalidate->getTranslation('or') : 'or';
         $allowedExtensionsText = Helper::join(Helper::wraps($allowedExtensions, ".", ""), ', ', ", {$or} ");
         $this->setParameterText('allowed_extensions', $allowedExtensionsText);
 

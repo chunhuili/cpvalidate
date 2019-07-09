@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation;
+namespace Chunhuili\Cpvalidate;
 
 class MissingRequiredParameterException extends \Exception
 {

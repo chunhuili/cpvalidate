@@ -1,6 +1,6 @@
 <?php
 
-namespace Rakit\Validation\Rules\Traits;
+namespace Chunhuili\Cpvalidate\Rules\Traits;
 
 use InvalidArgumentException;
 
