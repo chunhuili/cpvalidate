@@ -1,70 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71c9f1af-33f5-4918-b5cf-96c21a77320a" name="Default" comment="fix 修改命名空间">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composerbac.json" afterPath="$PROJECT_DIR$/composerbac.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpcs.xml" afterPath="$PROJECT_DIR$/phpcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Attribute.php" afterPath="$PROJECT_DIR$/src/Attribute.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErrorBag.php" afterPath="$PROJECT_DIR$/src/ErrorBag.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Helper.php" afterPath="$PROJECT_DIR$/src/Helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MimeTypeGuesser.php" afterPath="$PROJECT_DIR$/src/MimeTypeGuesser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MissingRequiredParameterException.php" afterPath="$PROJECT_DIR$/src/MissingRequiredParameterException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rule.php" afterPath="$PROJECT_DIR$/src/Rule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RuleNotFoundException.php" afterPath="$PROJECT_DIR$/src/RuleNotFoundException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RuleQuashException.php" afterPath="$PROJECT_DIR$/src/RuleQuashException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Accepted.php" afterPath="$PROJECT_DIR$/src/Rules/Accepted.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/After.php" afterPath="$PROJECT_DIR$/src/Rules/After.php" />
+    <list default="true" id="71c9f1af-33f5-4918-b5cf-96c21a77320a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Mimes.php" afterPath="$PROJECT_DIR$/src/Rules/Mimes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Traits/MessagesTrait.php" afterPath="$PROJECT_DIR$/src/Traits/MessagesTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ipv6.php" afterPath="$PROJECT_DIR$/src/Rules/Ipv6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Interfaces/BeforeValidate.php" afterPath="$PROJECT_DIR$/src/Rules/Interfaces/BeforeValidate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Alpha.php" afterPath="$PROJECT_DIR$/src/Rules/Alpha.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaDash.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaDash.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaNum.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaNum.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaSpaces.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaSpaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Before.php" afterPath="$PROJECT_DIR$/src/Rules/Before.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Between.php" afterPath="$PROJECT_DIR$/src/Rules/Between.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Callback.php" afterPath="$PROJECT_DIR$/src/Rules/Callback.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Date.php" afterPath="$PROJECT_DIR$/src/Rules/Date.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Defaults.php" afterPath="$PROJECT_DIR$/src/Rules/Defaults.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rule.php" afterPath="$PROJECT_DIR$/src/Rule.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Different.php" afterPath="$PROJECT_DIR$/src/Rules/Different.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Digits.php" afterPath="$PROJECT_DIR$/src/Rules/Digits.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ipv4.php" afterPath="$PROJECT_DIR$/src/Rules/Ipv4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpcs.xml" afterPath="$PROJECT_DIR$/phpcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MimeTypeGuesser.php" afterPath="$PROJECT_DIR$/src/MimeTypeGuesser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/FileTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/FileTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWithAll.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWithAll.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validator.php" afterPath="$PROJECT_DIR$/src/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Lowercase.php" afterPath="$PROJECT_DIR$/src/Rules/Lowercase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaDash.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaDash.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Attribute.php" afterPath="$PROJECT_DIR$/src/Attribute.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RuleQuashException.php" afterPath="$PROJECT_DIR$/src/RuleQuashException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/DigitsBetween.php" afterPath="$PROJECT_DIR$/src/Rules/DigitsBetween.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Email.php" afterPath="$PROJECT_DIR$/src/Rules/Email.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Extension.php" afterPath="$PROJECT_DIR$/src/Rules/Extension.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/In.php" afterPath="$PROJECT_DIR$/src/Rules/In.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Integer.php" afterPath="$PROJECT_DIR$/src/Rules/Integer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Interfaces/BeforeValidate.php" afterPath="$PROJECT_DIR$/src/Rules/Interfaces/BeforeValidate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Interfaces/ModifyValue.php" afterPath="$PROJECT_DIR$/src/Rules/Interfaces/ModifyValue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ip.php" afterPath="$PROJECT_DIR$/src/Rules/Ip.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ipv4.php" afterPath="$PROJECT_DIR$/src/Rules/Ipv4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ipv6.php" afterPath="$PROJECT_DIR$/src/Rules/Ipv6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Json.php" afterPath="$PROJECT_DIR$/src/Rules/Json.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Lowercase.php" afterPath="$PROJECT_DIR$/src/Rules/Lowercase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Max.php" afterPath="$PROJECT_DIR$/src/Rules/Max.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Mimes.php" afterPath="$PROJECT_DIR$/src/Rules/Mimes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Min.php" afterPath="$PROJECT_DIR$/src/Rules/Min.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/NotIn.php" afterPath="$PROJECT_DIR$/src/Rules/NotIn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Numeric.php" afterPath="$PROJECT_DIR$/src/Rules/Numeric.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Present.php" afterPath="$PROJECT_DIR$/src/Rules/Present.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Regex.php" afterPath="$PROJECT_DIR$/src/Rules/Regex.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Digits.php" afterPath="$PROJECT_DIR$/src/Rules/Digits.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Required.php" afterPath="$PROJECT_DIR$/src/Rules/Required.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredIf.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredIf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredUnless.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredUnless.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWith.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWith.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWithAll.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWithAll.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWithout.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWithout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Ip.php" afterPath="$PROJECT_DIR$/src/Rules/Ip.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/After.php" afterPath="$PROJECT_DIR$/src/Rules/After.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Helper.php" afterPath="$PROJECT_DIR$/src/Helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composerbac.json" afterPath="$PROJECT_DIR$/composerbac.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Date.php" afterPath="$PROJECT_DIR$/src/Rules/Date.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWithoutAll.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWithoutAll.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Same.php" afterPath="$PROJECT_DIR$/src/Rules/Same.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/DateUtilsTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/DateUtilsTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/FileTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/FileTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/SizeTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/SizeTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/TypeArray.php" afterPath="$PROJECT_DIR$/src/Rules/TypeArray.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/UploadedFile.php" afterPath="$PROJECT_DIR$/src/Rules/UploadedFile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Uppercase.php" afterPath="$PROJECT_DIR$/src/Rules/Uppercase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Url.php" afterPath="$PROJECT_DIR$/src/Rules/Url.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Traits/MessagesTrait.php" afterPath="$PROJECT_DIR$/src/Traits/MessagesTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Traits/TranslationsTrait.php" afterPath="$PROJECT_DIR$/src/Traits/TranslationsTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWith.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWith.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Callback.php" afterPath="$PROJECT_DIR$/src/Rules/Callback.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Min.php" afterPath="$PROJECT_DIR$/src/Rules/Min.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ErrorBag.php" afterPath="$PROJECT_DIR$/src/ErrorBag.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Max.php" afterPath="$PROJECT_DIR$/src/Rules/Max.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validation.php" afterPath="$PROJECT_DIR$/src/Validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validator.php" afterPath="$PROJECT_DIR$/src/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Extension.php" afterPath="$PROJECT_DIR$/src/Rules/Extension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/NotIn.php" afterPath="$PROJECT_DIR$/src/Rules/NotIn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Same.php" afterPath="$PROJECT_DIR$/src/Rules/Same.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RuleNotFoundException.php" afterPath="$PROJECT_DIR$/src/RuleNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/DateUtilsTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/DateUtilsTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/UploadedFile.php" afterPath="$PROJECT_DIR$/src/Rules/UploadedFile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Regex.php" afterPath="$PROJECT_DIR$/src/Rules/Regex.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Url.php" afterPath="$PROJECT_DIR$/src/Rules/Url.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/TypeArray.php" afterPath="$PROJECT_DIR$/src/Rules/TypeArray.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaNum.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaNum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/AlphaSpaces.php" afterPath="$PROJECT_DIR$/src/Rules/AlphaSpaces.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Between.php" afterPath="$PROJECT_DIR$/src/Rules/Between.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Integer.php" afterPath="$PROJECT_DIR$/src/Rules/Integer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Traits/TranslationsTrait.php" afterPath="$PROJECT_DIR$/src/Traits/TranslationsTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredWithout.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredWithout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Defaults.php" afterPath="$PROJECT_DIR$/src/Rules/Defaults.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Json.php" afterPath="$PROJECT_DIR$/src/Rules/Json.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Present.php" afterPath="$PROJECT_DIR$/src/Rules/Present.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/In.php" afterPath="$PROJECT_DIR$/src/Rules/In.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredUnless.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredUnless.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Before.php" afterPath="$PROJECT_DIR$/src/Rules/Before.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Uppercase.php" afterPath="$PROJECT_DIR$/src/Rules/Uppercase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MissingRequiredParameterException.php" afterPath="$PROJECT_DIR$/src/MissingRequiredParameterException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/RequiredIf.php" afterPath="$PROJECT_DIR$/src/Rules/RequiredIf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Accepted.php" afterPath="$PROJECT_DIR$/src/Rules/Accepted.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Numeric.php" afterPath="$PROJECT_DIR$/src/Rules/Numeric.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Traits/SizeTrait.php" afterPath="$PROJECT_DIR$/src/Rules/Traits/SizeTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules/Interfaces/ModifyValue.php" afterPath="$PROJECT_DIR$/src/Rules/Interfaces/ModifyValue.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +82,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
               <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-              <folding />
+              <folding>
+                <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+                <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+                <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+                <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +115,21 @@
       <file leaf-file-name="Attribute.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Attribute.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3968">
-              <caret line="124" column="34" lean-forward="false" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
+            <state relative-caret-position="3714">
+              <caret line="124" column="35" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+              <folding>
+                <marker date="1562665269695" expanded="true" signature="5694:6371" ph="{...}" />
+                <marker date="1562665269695" expanded="true" signature="6328:6369" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,18 +139,26 @@
         <entry file="file://$PROJECT_DIR$/src/ErrorBag.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-              <folding />
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <marker date="1562665269697" expanded="true" signature="54:6455" ph="{...}" />
+                <marker date="1562665269697" expanded="true" signature="6382:6453" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rule.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Rule.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rule.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="288">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <marker date="1562665269700" expanded="true" signature="4395:4779" ph="{...}" />
+                <marker date="1562665269700" expanded="true" signature="4493:4777" ph="{...}" />
+                <marker date="1562665269700" expanded="true" signature="4537:4770" ph="..." />
+                <marker date="1562665269700" expanded="true" signature="4586:4760" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,7 +186,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev-master" />
       </map>
     </option>
   </component>
@@ -174,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/Helper.php" />
         <option value="$PROJECT_DIR$/src/MimeTypeGuesser.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -370,10 +398,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8055000" />
+    <option name="totallyTimeSpent" value="8071000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17668097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -389,10 +417,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17668097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -412,11 +442,114 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Rules/Different.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-392">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="18" column="15" lean-forward="false" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composerbac.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding>
+            <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+            <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MimeTypeGuesser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErrorBag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <marker date="1562665269697" expanded="true" signature="54:6455" ph="{...}" />
+            <marker date="1562665269697" expanded="true" signature="6382:6453" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rule.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <marker date="1562665269700" expanded="true" signature="4395:4779" ph="{...}" />
+            <marker date="1562665269700" expanded="true" signature="4493:4777" ph="{...}" />
+            <marker date="1562665269700" expanded="true" signature="4537:4770" ph="..." />
+            <marker date="1562665269700" expanded="true" signature="4586:4760" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="124" column="35" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+          <folding>
+            <marker date="1562665269695" expanded="true" signature="5694:6371" ph="{...}" />
+            <marker date="1562665269695" expanded="true" signature="6328:6369" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composerbac.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+            <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -432,7 +565,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+            <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -440,7 +578,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+            <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -643,9 +786,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Attribute.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3968">
-          <caret line="124" column="34" lean-forward="false" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="3714">
+          <caret line="124" column="35" lean-forward="false" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="35" />
+          <folding>
+            <marker date="1562665269695" expanded="true" signature="5694:6371" ph="{...}" />
+            <marker date="1562665269695" expanded="true" signature="6328:6369" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,7 +799,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-          <folding />
+          <folding>
+            <marker date="1562665269693" expanded="true" signature="0:648" ph="{&quot;name&quot;: &quot;rakit/validation&quot;...}" />
+            <marker date="1562665269693" expanded="true" signature="365:410" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="586:646" ph="{...}" />
+            <marker date="1562665269693" expanded="true" signature="600:642" ph="[...]" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,31 +821,7 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-            <folding>
-              <marker date="1562658698783" expanded="true" signature="1136:1569" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="1155:1568" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="1643:1787" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="1795:1842" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="2022:2455" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="2041:2454" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="2486:2612" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="2620:2661" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="25716:26712" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="25918:25957" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="26002:26710" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="26329:26363" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="28187:28560" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="28236:28311" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="28352:28429" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="28469:28545" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="29325:29363" ph="{...}" />
-              <marker date="1562658698783" expanded="false" signature="29768:29849" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="29907:30041" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="29958:30030" ph="{...}" />
-              <marker date="1562658698783" expanded="false" signature="30559:30643" ph="..." />
-              <marker date="1562658698783" expanded="true" signature="30704:31124" ph="{...}" />
-              <marker date="1562658698783" expanded="true" signature="30752:31113" ph="{...}" />
-            </folding>
+            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -719,15 +846,31 @@
     <entry file="file://$PROJECT_DIR$/src/ErrorBag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <marker date="1562665269697" expanded="true" signature="54:6455" ph="{...}" />
+            <marker date="1562665269697" expanded="true" signature="6382:6453" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Rule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="288">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <marker date="1562665269700" expanded="true" signature="4395:4779" ph="{...}" />
+            <marker date="1562665269700" expanded="true" signature="4493:4777" ph="{...}" />
+            <marker date="1562665269700" expanded="true" signature="4537:4770" ph="..." />
+            <marker date="1562665269700" expanded="true" signature="4586:4760" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
