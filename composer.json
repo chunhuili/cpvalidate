@@ -1,0 +1,25 @@
+{
+    "name": "chunhuili/cpvalidate",
+    "description": "php is the best language",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chunhuili",
+            "email": "2947680759@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable" : true,
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Chunhuili\\Cpvalidate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Chunhuili\\Cpvalidate\\Tests\\": "tests/"
+        }
+    }
+}
