@@ -23,7 +23,7 @@ class Sensitive extends Rule
      */
     public function check($value): bool
     {
-        $sensitiveWord = [];
+        $sensitiveWord = ['hhh','aaa'];
 
         if (in_array($value,$sensitiveWord)) {
             return false;
