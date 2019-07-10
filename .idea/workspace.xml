@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71c9f1af-33f5-4918-b5cf-96c21a77320a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validator.php" afterPath="$PROJECT_DIR$/src/Validator.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -457,11 +456,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562722305324</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix 增加敏感词绑定">
+      <created>1562723305173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562723305173</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10514000" />
+    <option name="totallyTimeSpent" value="10532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -499,7 +505,8 @@
     <MESSAGE value="提交" />
     <MESSAGE value="fix 修改命名空间" />
     <MESSAGE value="fix 增加敏感词" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix 增加敏感词" />
+    <MESSAGE value="fix 增加敏感词绑定" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix 增加敏感词绑定" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
