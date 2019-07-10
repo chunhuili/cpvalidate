@@ -2,6 +2,8 @@
 
 namespace Chunhuili\Cpvalidate;
 
+use Chunhuili\Cpvalidate\Rules\Sensitive;
+
 class Validator
 {
     use Traits\TranslationsTrait, Traits\MessagesTrait;
@@ -160,6 +162,7 @@ class Validator
             'digits_between'            => new Rules\DigitsBetween,
             'defaults'                  => new Rules\Defaults,
             'default'                   => new Rules\Defaults, // alias of defaults
+            'sensitive'                 => new Rules\Sensitive
         ];
 
         foreach ($baseValidator as $key => $validator) {
